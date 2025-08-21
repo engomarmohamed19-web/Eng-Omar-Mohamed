@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2a06f3;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;   /* يخلي الكونتينر كله في النص */
+  align-items: flex-start;   /* يبدأ من فوق */
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* العناصر جواها تبقى تحت بعض */
+  align-items: center;    /* يخليهم في النص عرضياً */
+  margin-top: 20px;
+}
+
+.img {
+  background-color: #4ba6e2;
+  border-radius: 10px;
+  padding: 10px 20px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 0 8px #333;
+  transition: transform 0.3s;
+  margin-bottom: 20px; /* مسافة بين الصورة والمستطيل */
+}
+
+.img img {
+  width: 100%;
+  border-radius: 5px;
+  height: 200px;
+}
+
+.img p {
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.6;
+  margin-top: 8px;
+}
+
+.box {
+  width: 600px;
+  height: 150px;
+  background: rgb(19, 18, 116);
+  border-radius: 10px;
+  padding: 15px 20px;
+  box-shadow: 0 0 8px #333;
+}
+
+.box ol {
+  margin: 0;
+  padding-left: 20px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  
+}
+.box ol li {
+  margin-bottom: 10px; 
+}
+
+.back {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 10px;
+  border: solid;
+  border-color: rgb(43, 6, 255);
+  width: 100px;
+  height: 30px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  cursor: pointer;
+}
+
+.back:hover {
+  background-color: red;
+}

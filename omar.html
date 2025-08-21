@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>omar</title>
+  <link rel="stylesheet" href="omar.css">
+</head>
+<body>
+  <div class="form-container">
+   
+    
+  
+    <form onsubmit="goToNextPage(event)">
+      <label>User Name :</label>
+      <input type="text" name="username"><br>
+
+      <label>Age :</label>
+      <input type="number" name="age"><br>
+
+      <label>Email :</label>
+      <input type="email" name="email"><br>
+      <label>Password :</label>
+      <input type="password" name="password"><br>
+       <input type="submit" value="Loge in">
+    </form>
+  </div>
+
+  
+  <script>
+    function goToNextPage(event) {
+      event.preventDefault(); 
+      window.location.href = "omar2.html";
+    }
+  </script>
+</body>
+</html>

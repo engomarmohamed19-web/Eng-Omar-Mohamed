@@ -1,0 +1,101 @@
+table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 4px;
+   
+    
+}
+td,th{
+    background-color: rgb(49, 58, 112);
+    height: 40px;
+     border-radius: 10px;
+}
+
+th{
+    background-color: rgb(0, 4, 255);
+}
+
+.price,.count{
+    padding: 5px;
+    border-radius: 7px;
+}
+.price{
+    background-color: red;
+}
+.count{
+    background-color: coral;
+}
+
+.Clients:hover {
+  background: darkblue;   /* تأثير عند المرور */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: rgb(6, 6, 146);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* للجداول */
+/* تصميم عام للجداول */
+table {
+    width: 100%;
+    
+    margin-bottom: 30px;
+    background: linear-gradient(180deg, #515a63, #384453); /* أزرق رمادي فاتح */
+    
+    border-radius: 20px;
+    overflow: hidden;
+    color: #ffffff;
+    text-align: center; /* توسيط أفقي */
+}
+
+/* خلايا الجدول */
+table th, table td {
+    padding: 14px;
+    border: 1px solid #7a8ca3; /* لون الفواصل أزرق رمادي واضح */
+   
+}
+
+/* الهيدر */
+table thead {
+    background: #0059ff; /* أزرق غامق رسمي */
+    color: white;
+}
+
+
+
+
+.back {
+  position: fixed;       /* يثبت مكانه */
+  bottom: 20px;          /* مسافة من تحت */
+  right: 20px;           /* مسافة من اليمين */
+  border-radius: 10px;
+  border: solid;
+  border-color: rgb(43, 6, 255);
+  width: 100px;
+  height: 30px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  cursor: pointer;
+}
+
+.back:hover {
+  background-color: red;
+}
+

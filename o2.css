@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: rgb(6, 6, 146);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* للجداول */
+/* تصميم عام للجداول */
+table {
+    width: 80%;
+    
+    margin-bottom: 30px;
+    background: linear-gradient(180deg, #515a63, #444a52); /* أزرق رمادي فاتح */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border-radius: 20px;
+    overflow: hidden;
+    color: #ffffff;
+    text-align: center; /* توسيط أفقي */
+}
+
+/* خلايا الجدول */
+table th, table td {
+    padding: 14px;
+    border: 1px solid #7a8ca3; /* لون الفواصل أزرق رمادي واضح */
+   
+}
+
+/* الهيدر */
+table thead {
+    background: #0059ff; /* أزرق غامق رسمي */
+    color: white;
+}
+
+
+
+/* تحسين النجوم */
+.fa-star {
+    color: gold;
+    margin: 0 2px;
+}
+
+.back {
+  position: fixed;       /* يثبت مكانه */
+  bottom: 20px;          /* مسافة من تحت */
+  right: 20px;           /* مسافة من اليمين */
+  border-radius: 10px;
+  border: solid;
+  border-color: rgb(43, 6, 255);
+  width: 100px;
+  height: 30px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  cursor: pointer;
+}
+
+.back:hover {
+  background-color: red;
+}
+
+
+.item {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.star {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  color: gray;
+  user-select: none;
+}
+
+.star.active {
+  color: gold;
+}

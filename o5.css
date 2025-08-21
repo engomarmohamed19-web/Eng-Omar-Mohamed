@@ -1,0 +1,158 @@
+body {
+  background-color: #3050af;
+
+  font-family: sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* الشبكة */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* الإطار */
+.gallery img {
+  width: 100%;
+  height: auto;
+  border: 5px solid #2196f3;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+
+/* النافذة المنبثقة */
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup img {
+  max-width: 80%;
+  max-height: 80%;
+  border: 5px solid #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.popup:target {
+  display: flex;
+}
+ 
+h2{
+    border: solid;
+    border-radius: 10px;
+  background-color: white;
+  width: 150px;
+}
+
+.back {
+  position: fixed;       /* يثبت مكانه */
+  bottom: 20px;          /* مسافة من تحت */
+  right: 20px;           /* مسافة من اليمين */
+  border-radius: 10px;
+  border: solid;
+  border-color: rgb(43, 6, 255);
+  width: 100px;
+  height: 30px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  cursor: pointer;
+}
+
+.back:hover {
+  background-color: red;
+}
+
+
+body {
+  background-color: #394e8d;
+  font-family: sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* العنصر */
+.item {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* النجمة */
+.star {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  color: gray;
+  user-select: none;
+}
+
+.star.active {
+  color: gold;
+}
+
+
+.item {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.item img {
+  display: block;
+  border-radius: 5px;
+}
+
+/* النجمة */
+.star {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  font-size: 22px;
+  color: gray;
+  user-select: none;
+}
+
+.star.active {
+  color: gold;
+}
